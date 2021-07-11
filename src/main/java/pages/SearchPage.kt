@@ -2,6 +2,7 @@ package pages
 
 import com.microsoft.playwright.ElementHandle
 import com.microsoft.playwright.Page
+import com.microsoft.playwright.options.WaitForSelectorState
 import java.util.stream.Collectors
 
 class SearchPage(private val page: Page) {
@@ -14,18 +15,18 @@ class SearchPage(private val page: Page) {
     fun search(query: String?) {
         clearSearchBar()
         page.fill(locator_searchBar, query)
-        val expectedState = Page.WaitForSelectorOptions().setState(Page.WaitForSelectorOptions.State?.ATTACHED)
+        val expectedState = Page.WaitForSelectorOptions().setState(WaitForSelectorState.ATTACHED)
         page.waitForSelector(locator_hiddenBooks, expectedState)
     }
 
     fun clearSearchBar() {
         page.fill(locator_searchBar, "")
-        val expectedState = Page.WaitForSelectorOptions().setState(Page.WaitForSelectorOptions.State.DETACHED)
+        val expectedState = Page.WaitForSelectorOptions().setState(WaitForSelectorState.DETACHED)
         page.waitForSelector(locator_hiddenBooks, expectedState)
     }
 
-    val numberOfVisibleBooks: Int
-        get() = page.querySelectorAll(locator_visibleBooks).size
+    val numberOfVisibleBooks: Int get() = page.querySelectorAll(locator_visibleBooks).size
+
     val visibleBooks: List<String>
         get() = page.querySelectorAll(locator_visibleBookTitles)
             .stream()

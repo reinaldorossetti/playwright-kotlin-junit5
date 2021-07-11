@@ -13,6 +13,7 @@ import kotlin.test.assertTrue
 class SearchTests : BaseTests() {
     @Test
     @Step("Search for exact title")
+    @Order(1)
     fun searchForExactTitle() {
         val title = "Agile Testing"
         searchPage.search(title)
@@ -22,6 +23,7 @@ class SearchTests : BaseTests() {
 
     @Test
     @Step("Search for partial title")
+    @Order(2)
     fun searchForPartialTitle() {
         searchPage.search("Test")
         val expectedBooks = listOf(

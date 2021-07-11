@@ -24,7 +24,7 @@ dependencies {
     testImplementation("io.rest-assured:json-schema-validator:4.4.0")
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.8.+")
     testImplementation("com.github.javafaker:javafaker:1.0.2")
-    implementation("com.microsoft.playwright:playwright:1.11.1")
+    implementation("com.microsoft.playwright:playwright:1.12.1")
     testImplementation("io.qameta.allure:allure-junit5:2.14.0")
 }
 
