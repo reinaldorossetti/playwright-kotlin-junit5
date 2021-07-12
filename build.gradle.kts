@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.5.20"
+    id("io.qameta.allure") version "2.8.1"
     java
 }
 
@@ -26,10 +27,16 @@ dependencies {
     testImplementation("com.github.javafaker:javafaker:1.0.2")
     implementation("com.microsoft.playwright:playwright:1.12.1")
     testImplementation("io.qameta.allure:allure-junit5:2.14.0")
+    implementation("io.qameta.allure:allure-okhttp3:2.10.0")
 }
 
 configure<JavaPluginConvention> {
     sourceCompatibility = JavaVersion.VERSION_11
+}
+
+allure {
+    version = "2.14.0"
+    downloadLinkFormat = "https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.14.0/allure-commandline-2.14.0.zip"
 }
 
 tasks.test {
@@ -40,9 +47,11 @@ tasks.test {
         showCauses = true
         showExceptions = true
         showStackTraces = true
+        maxHeapSize = "2G"
     }
 }
 
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions.jvmTarget = "11"
 }
+

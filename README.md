@@ -3,13 +3,21 @@
 Microsoft has a new open source web automation tool, Playwright. It recently released support for Java. Here are example tests that demonstrate how to use Playwright, including creating Page Objects  
 
 
+### Executes all tests in SomeTestClass
+```
+gradle clean test --tests SearchTests
+```
+### Executes a single specified test in SomeTestClass
+```
+gradle test --tests SearchTests.searchForPartialTitle
+gradle test --tests SearchTests.*PartialTitle*
+```
 ###Requirements:  
 >> Install Java JDK >= 11  
 ```  
-  <configuration>  
-      <source>11</source>  
-      <target>11</target>  
-  </configuration>  
+tasks.withType<KotlinCompile>().configureEach {
+    kotlinOptions.jvmTarget = "11"
+}
 ```  
 https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html  
 

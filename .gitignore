@@ -5,3 +5,5 @@
 /build/
 /.gradle/
 /allure-results/
+/screenshot.png
+/.gradle/
