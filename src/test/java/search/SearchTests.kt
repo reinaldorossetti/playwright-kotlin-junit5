@@ -27,11 +27,8 @@ class SearchTests : BaseTests() {
     fun searchForPartialTitle() {
         searchPage.search("Test")
         val expectedBooks = listOf(
-            "Test Automation in the Real World",
-            "Experiences of Test Automation",
-            "Agile Testing",
-            "How Google Tests Software",
-            "Java For Testers"
+            "Test Automation in the Real World", "Experiences of Test Automation",
+            "Agile Testing", "How Google Tests Software", "Java For Testers"
         )
         assertEquals(searchPage.numberOfVisibleBooks, expectedBooks.size, "Number of visible books")
         assertEquals(searchPage.visibleBooks, expectedBooks, "Titles of visible books")
