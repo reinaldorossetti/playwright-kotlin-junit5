@@ -1,4 +1,4 @@
-# Microsoft Playwright - Java API
+# Microsoft Playwright - Koltin Project Automation Test
 
 Microsoft has a new open source web automation tool, Playwright. It recently released support for Java\Kotlin. Here are example tests that demonstrate how to use Playwright, including creating Page Objects, Junit 5 e Allure Report.  
 
