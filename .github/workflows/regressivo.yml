@@ -1,4 +1,4 @@
-name: "pLAYWRIGHT testes regressivos"
+name: "testes regressivos"
 on:
   pull_request:
   push:
@@ -52,7 +52,7 @@ jobs:
     - name: Run tests
       if: always()
       continue-on-error: true
-      run: mvn test -DbrowserType=${{ matrix.browser }} -Dtest="LoginFeature,TrocaDeSenhaFeature,MenuPrincipalFeature" --no-transfer-progress
+      run: mvn test -DbrowserType=${{ matrix.browser }} --no-transfer-progress
       env:
         BROWSER: chromium
         BROWSER_CHANNEL: ${{ matrix.browser-channel }}
