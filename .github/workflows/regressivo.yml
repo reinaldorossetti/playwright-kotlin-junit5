@@ -1,4 +1,4 @@
-name: "testes regressivos"
+name: "pLAYWRIGHT testes regressivos"
 on:
   pull_request:
   push:
