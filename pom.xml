@@ -4,7 +4,7 @@
 http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId></groupId>
+	<groupId>qa.reinaldo</groupId>
 	<artifactId>playwright-kotlin-junit5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -235,19 +235,9 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>2.12.4</version>
 		</dependency>
 		<dependency>
-			<groupId>com.github.javafaker</groupId>
-			<artifactId>javafaker</artifactId>
-			<version>1.0.2</version>
-		</dependency>
-		<dependency>
 			<groupId>com.konghq</groupId>
 			<artifactId>unirest-java</artifactId>
 			<version>3.11.12</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.automatedowl</groupId>
-			<artifactId>allure-environment-writer</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
