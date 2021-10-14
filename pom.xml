@@ -1,135 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd
-http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.0-SNAPSHOT</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
 	<groupId>qa</groupId>
 	<artifactId>playwright-kotlin-junit5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<name>serverest</name>
+	<description>Automação com Kotlin e Rest-Assured</description>
 	<properties>
-		<kotlin.version>1.5.30</kotlin.version>
-		<junit.version>5.5.0</junit.version>
-		<kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
-		<aspectj.version>1.9.4</aspectj.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-		<surefire.rerunFailingTestsCount>1</surefire.rerunFailingTestsCount>
+		<java.version>11</java.version>
+		<kotlin.version>1.5.31</kotlin.version>
 	</properties>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-maven-plugin</artifactId>
-				<version>${kotlin.version}</version>
-				<executions>
-					<execution>
-						<id>compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-<!--						<configuration>-->
-<!--							<sourceDirs>-->
-<!--								<sourceDir>${project.basedir}/src/test/java</sourceDir>-->
-<!--							</sourceDirs>-->
-<!--						</configuration>-->
-					</execution>
-					<execution>
-						<id>test-compile</id>
-						<phase>test-compile</phase>
-						<goals>
-							<goal>test-compile</goal>
-						</goals>
-						<configuration>
-							<sourceDirs>
-								<sourceDir>${project.basedir}/src/test/java</sourceDir>
-							</sourceDirs>
-						</configuration>
-					</execution>
-				</executions>
-				<configuration>
-					<jvmTarget>1.8</jvmTarget>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<executions>
-					<execution>
-						<id>compile</id>
-						<phase>compile</phase>
-						<goals>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>testCompile</id>
-						<phase>test-compile</phase>
-						<goals>
-							<goal>testCompile</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<source>11</source>
-					<target>11</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
-				<configuration>
-					<useSystemClassLoader>false</useSystemClassLoader>
-					<argLine>
-						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-					</argLine>
-					<properties>
-					</properties>
-					<systemProperties>
-						<property>
-							<name>allure.results.directory</name>
-							<value>${project.build.directory}/allure-results</value>
-						</property>
-					</systemProperties>
-					<includes>
-						<include>**/tests/**</include>
-						<include>*Feature*</include>
-					</includes>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.aspectj</groupId>
-						<artifactId>aspectjweaver</artifactId>
-						<version>${aspectj.version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.22.0</version>
-			</plugin>
-			<plugin>
-				<groupId>io.qameta.allure</groupId>
-				<artifactId>allure-maven</artifactId>
-				<version>2.10.0</version>
-				<configuration>
-					<reportVersion>2.14.0</reportVersion>
-					<buildDirectory>.</buildDirectory>
-					<allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/2.14.0/allure-2.14.0.zip</allureDownloadUrl>
-					<!--suppress UnresolvedMavenProperty -->
-					<resultsDirectory>${basedir}/allure-results/</resultsDirectory>
-					<reportDirectory>${basedir}/target/allure-reports</reportDirectory>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>com.microsoft.playwright</groupId>
@@ -143,69 +30,29 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-test-junit</artifactId>
+			<version>${kotlin.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-script-runtime</artifactId>
+			<version>RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-junit5</artifactId>
 			<version>2.14.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>ru.yandex.qatools.allure</groupId>
-			<artifactId>allure-junit-adaptor</artifactId>
-			<version>1.5.4</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.aspectj</groupId>
-			<artifactId>aspectjweaver</artifactId>
-			<version>${aspectj.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-maven</artifactId>
-			<version>2.10.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>${junit.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>${junit.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
-			<version>${junit.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-commons</artifactId>
-			<version>1.5.2</version>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>1.4.0</version>
-			<scope>test</scope>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
 			<artifactId>kotlin-reflect</artifactId>
-			<version>1.5.21</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-commandline</artifactId>
-			<version>2.14.0</version>
-			<type>pom</type>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-test-junit</artifactId>
 			<version>${kotlin.version}</version>
 		</dependency>
 		<dependency>
@@ -214,39 +61,114 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 			<version>${kotlin.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>kotlin-extensions</artifactId>
+			<version>4.4.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.8</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
-		<dependency>
-			<groupId>com.konghq</groupId>
-			<artifactId>unirest-java</artifactId>
-			<version>3.11.12</version>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-script-runtime</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-script-runtime</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-script-runtime</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-script-runtime</artifactId>
-			<version>RELEASE</version>
-			<scope>compile</scope>
-		</dependency>
 	</dependencies>
+
+	<build>
+		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+		<testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>io.qameta.allure</groupId>
+				<artifactId>allure-maven</artifactId>
+				<version>2.10.0</version>
+				<configuration>
+					<reportVersion>2.14.0</reportVersion>
+					<buildDirectory>.</buildDirectory>
+					<allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/2.14.0/allure-2.14.0.zip</allureDownloadUrl>
+					<!--suppress UnresolvedMavenProperty -->
+					<resultsDirectory>${basedir}/allure-results/</resultsDirectory>
+					<reportDirectory>${basedir}/target/allure-reports</reportDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-maven-plugin</artifactId>
+				<configuration>
+					<args>
+						<arg>-Xjsr305=strict</arg>
+					</args>
+					<compilerPlugins>
+						<plugin>spring</plugin>
+					</compilerPlugins>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.jetbrains.kotlin</groupId>
+						<artifactId>kotlin-maven-allopen</artifactId>
+						<version>${kotlin.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
 
 </project>
