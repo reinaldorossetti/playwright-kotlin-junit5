@@ -1,1 +1,21 @@
-[ ]
+[ {
+  "uid" : "5faf517551780011",
+  "name" : "searchForExactTitle()",
+  "time" : {
+    "start" : 1634232284476,
+    "stop" : 1634232285051,
+    "duration" : 575
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8214b947e0b93fb3",
+  "name" : "searchForPartialTitle()",
+  "time" : {
+    "start" : 1634232285164,
+    "stop" : 1634232285941,
+    "duration" : 777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
