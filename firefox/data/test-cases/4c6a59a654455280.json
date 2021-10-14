@@ -1,0 +1,74 @@
+{
+  "uid" : "4c6a59a654455280",
+  "name" : "searchForExactTitle()",
+  "fullName" : "qa.search.SearchTests.searchForExactTitle",
+  "historyId" : "cbc802f4f210343e7ed1d6bba178aeb7",
+  "time" : {
+    "start" : 1634232707755,
+    "stop" : 1634232708386,
+    "duration" : 631
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f9d04dfa7af9e87e",
+      "name" : "screenshot.png",
+      "source" : "f9d04dfa7af9e87e.png",
+      "type" : "image/png",
+      "size" : 88352
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az71-365"
+  }, {
+    "name" : "thread",
+    "value" : "3444@fv-az71-365.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "qa.search.SearchTests"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.search.SearchTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "searchForExactTitle"
+  }, {
+    "name" : "suite",
+    "value" : "qa.search.SearchTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4c6a59a654455280.json",
+  "parameterValues" : [ ]
+}

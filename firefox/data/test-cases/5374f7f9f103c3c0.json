@@ -1,0 +1,119 @@
+{
+  "uid" : "5374f7f9f103c3c0",
+  "name" : "searchForPartialTitle()",
+  "fullName" : "qa.search.SearchTests.searchForPartialTitle",
+  "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
+  "time" : {
+    "start" : 1634232708537,
+    "stop" : 1634232709390,
+    "duration" : 853
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado que estou no site",
+      "time" : {
+        "start" : 1634232708538,
+        "stop" : 1634232708539,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Quando fizer a busca do livro",
+      "time" : {
+        "start" : 1634232708540,
+        "stop" : 1634232708540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Então valida o retorno da busca",
+      "time" : {
+        "start" : 1634232708540,
+        "stop" : 1634232708540,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "a8c833c012457b4e",
+      "name" : "screenshot.png",
+      "source" : "a8c833c012457b4e.png",
+      "type" : "image/png",
+      "size" : 276948
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "fv-az71-365"
+  }, {
+    "name" : "thread",
+    "value" : "3444@fv-az71-365.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "qa.search.SearchTests"
+  }, {
+    "name" : "testClass",
+    "value" : "qa.search.SearchTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "searchForPartialTitle"
+  }, {
+    "name" : "suite",
+    "value" : "qa.search.SearchTests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5374f7f9f103c3c0.json",
+  "parameterValues" : [ ]
+}
