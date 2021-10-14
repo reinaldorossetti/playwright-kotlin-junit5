@@ -123,7 +123,7 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 					<buildDirectory>.</buildDirectory>
 					<allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/2.14.0/allure-2.14.0.zip</allureDownloadUrl>
 					<!--suppress UnresolvedMavenProperty -->
-					<resultsDirectory>${basedir}/target/allure-results/</resultsDirectory>
+					<resultsDirectory>${basedir}/allure-results/</resultsDirectory>
 					<reportDirectory>${basedir}/target/allure-reports</reportDirectory>
 				</configuration>
 			</plugin>

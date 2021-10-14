@@ -1,5 +1,6 @@
 package qa.search
 
+import io.qameta.allure.Allure.step
 import qa.base.BaseTests
 import io.qameta.allure.Step
 import org.junit.jupiter.api.MethodOrderer
@@ -25,6 +26,9 @@ class SearchTests : BaseTests() {
     @Step("Search for partial title")
     @Order(2)
     fun searchForPartialTitle() {
+        step("Dado que estou no site")
+        step("Quando fizer a busca do livro")
+        step("Então valida o retorno da busca")
         searchPage.search("Test")
         val expectedBooks = listOf(
             "Test Automation in the Real World", "Experiences of Test Automation",
