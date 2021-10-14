@@ -5,26 +5,26 @@
     "name" : "qa.search.SearchTests",
     "children" : [ {
       "name" : "searchForExactTitle()",
-      "uid" : "5faf517551780011",
+      "uid" : "c2c81811d969d9d9",
       "parentUid" : "237659e3e1e969558de98db4e537585d",
       "status" : "passed",
       "time" : {
-        "start" : 1634232284476,
-        "stop" : 1634232285051,
-        "duration" : 575
+        "start" : 1634232717567,
+        "stop" : 1634232718240,
+        "duration" : 673
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     }, {
       "name" : "searchForPartialTitle()",
-      "uid" : "8214b947e0b93fb3",
+      "uid" : "93c6b04c62e2e3a5",
       "parentUid" : "237659e3e1e969558de98db4e537585d",
       "status" : "passed",
       "time" : {
-        "start" : 1634232285164,
-        "stop" : 1634232285941,
-        "duration" : 777
+        "start" : 1634232718390,
+        "stop" : 1634232719273,
+        "duration" : 883
       },
       "flaky" : false,
       "newFailed" : false,
