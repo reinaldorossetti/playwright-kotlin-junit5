@@ -1,12 +1,12 @@
 {
-  "uid" : "d32c18c56ff7cafa",
+  "uid" : "dc086b78564a7949",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1634232299875,
-    "stop" : 1634232300693,
-    "duration" : 818
+    "start" : 1634232713311,
+    "stop" : 1634232714108,
+    "duration" : 797
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1634232299878,
-        "stop" : 1634232299878,
-        "duration" : 0
+        "start" : 1634232713313,
+        "stop" : 1634232713314,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,8 +34,8 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1634232299879,
-        "stop" : 1634232299879,
+        "start" : 1634232713315,
+        "stop" : 1634232713315,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1634232299879,
-        "stop" : 1634232299879,
+        "start" : 1634232713315,
+        "stop" : 1634232713315,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "attachmentsCount" : 0
     } ],
     "attachments" : [ {
-      "uid" : "25c008f5d96acf84",
+      "uid" : "a71c3a89a769f762",
       "name" : "screenshot.png",
-      "source" : "25c008f5d96acf84.png",
+      "source" : "a71c3a89a769f762.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -78,10 +78,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az30-58"
+    "value" : "fv-az71-365"
   }, {
     "name" : "thread",
-    "value" : "6960@fv-az30-58.main(1)"
+    "value" : "2232@fv-az71-365.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d32c18c56ff7cafa.json",
+  "source" : "dc086b78564a7949.json",
   "parameterValues" : [ ]
 }
