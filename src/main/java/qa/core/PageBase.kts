@@ -1,13 +1,10 @@
 package qa.core
 
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import com.fasterxml.jackson.module.kotlin.readValue
 import com.microsoft.playwright.ElementHandle
 import com.microsoft.playwright.Page
 import com.microsoft.playwright.options.LoadState
 import com.microsoft.playwright.options.SelectOption
 import com.microsoft.playwright.options.WaitForSelectorState
-import java.io.File
 import java.util.stream.Collectors
 import kotlin.test.fail
 
@@ -19,7 +16,6 @@ import kotlin.test.fail
 open class PageBase(private val page: Page){
 
     var pathProject = System.getProperty("user.dir")
-    val mapper = jacksonObjectMapper()
 
     // opcao que somente verifica se o elemento esta presente na DOM.
     val stateATTACHED: Page.WaitForSelectorOptions = Page.WaitForSelectorOptions().setState(WaitForSelectorState.ATTACHED)
@@ -145,29 +141,29 @@ open class PageBase(private val page: Page){
         return false
     }
 
-    /**
-     * clickRetry usando o setForce(true), tenta realizar o click 3 vezes.
-     * Observação: somente usar quando o botão na tela atual deve sumir.
-     * @property webElement css or xpath.
-     */
-    fun loadingPage(): Boolean {
-        var loading = false
-        for (x in 0..3){
-            try {
-                sleep() // espera ele aparecer
-                loading = isVisible(loadElementPage)
-                if(!loading){ break }
-                page.waitForSelector(loadElementPage, stateDETACHED)
-            } catch (ex: Exception){
-                println("Falhou ao localizar o elemento: $loadElementPage")
-            }
-            scrollIntoView(loadElementPage)
-        }
-        if(loading) {
-            fail("Loading preso na tela: $loadElementPage")
-        }
-        return false
-    }
+//    /**
+//     * clickRetry usando o setForce(true), tenta realizar o click 3 vezes.
+//     * Observação: somente usar quando o botão na tela atual deve sumir.
+//     * @property webElement css or xpath.
+//     */
+//    fun loadingPage(): Boolean {
+//        var loading = false
+//        for (x in 0..3){
+//            try {
+//                sleep() // espera ele aparecer
+//                loading = isVisible(loadElementPage)
+//                if(!loading){ break }
+//                page.waitForSelector(loadElementPage, stateDETACHED)
+//            } catch (ex: Exception){
+//                println("Falhou ao localizar o elemento: $loadElementPage")
+//            }
+//            scrollIntoView(loadElementPage)
+//        }
+//        if(loading) {
+//            fail("Loading preso na tela: $loadElementPage")
+//        }
+//        return false
+//    }
 
 
     /**
