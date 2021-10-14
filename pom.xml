@@ -106,7 +106,7 @@
 					<allureDownloadUrl>https://github.com/allure-framework/allure2/releases/download/2.14.0/allure-2.14.0.zip</allureDownloadUrl>
 					<!--suppress UnresolvedMavenProperty -->
 					<resultsDirectory>${basedir}/allure-results/</resultsDirectory>
-					<reportDirectory>${basedir}/target/allure-reports</reportDirectory>
+					<reportDirectory>${basedir}/allure-reports</reportDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
