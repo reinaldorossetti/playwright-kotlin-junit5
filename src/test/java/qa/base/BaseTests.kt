@@ -1,4 +1,4 @@
-package base
+package qa.base
 
 import com.microsoft.playwright.Browser
 import com.microsoft.playwright.BrowserType.LaunchOptions
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.TestInstance
-import pages.SearchPage
+import qa.pages.SearchPage
 import java.io.File
 import java.io.FileInputStream
 import java.io.InputStream

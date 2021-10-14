@@ -1,6 +1,6 @@
-package search
+package qa.search
 
-import base.BaseTests
+import qa.base.BaseTests
 import io.qameta.allure.Step
 import org.junit.jupiter.api.MethodOrderer
 import org.junit.jupiter.api.Order

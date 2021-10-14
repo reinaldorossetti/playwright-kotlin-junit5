@@ -8,3 +8,5 @@
 /screenshot.png
 /.gradle/
 /bin/
+/.settings/
+/playwright-kotlin-junit5.iml

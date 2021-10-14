@@ -1,4 +1,4 @@
-package qa.ntkonline.pages
+package qa.core
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
@@ -7,7 +7,6 @@ import com.microsoft.playwright.Page
 import com.microsoft.playwright.options.LoadState
 import com.microsoft.playwright.options.SelectOption
 import com.microsoft.playwright.options.WaitForSelectorState
-import qa.ntkonline.data.User
 import java.io.File
 import java.util.stream.Collectors
 import kotlin.test.fail
@@ -17,11 +16,10 @@ import kotlin.test.fail
  * Não necessário o uso de page.click para chamar as funções somente usar os nomes delas diretamente.
  */
 
-open class PageBase(private val page: Page): GlobalPage(page) {
+open class PageBase(private val page: Page){
 
     var pathProject = System.getProperty("user.dir")
     val mapper = jacksonObjectMapper()
-    var user: User = mapper.readValue<User>(File("$pathProject/src/test/java/resources/user.json"))
 
     // opcao que somente verifica se o elemento esta presente na DOM.
     val stateATTACHED: Page.WaitForSelectorOptions = Page.WaitForSelectorOptions().setState(WaitForSelectorState.ATTACHED)

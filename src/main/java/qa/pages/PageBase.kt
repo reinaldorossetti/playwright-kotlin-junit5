@@ -1,4 +1,4 @@
-package pages
+package qa.pages
 
 import com.microsoft.playwright.Page
 import com.microsoft.playwright.options.WaitForSelectorState
