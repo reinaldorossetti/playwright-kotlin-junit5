@@ -1,12 +1,12 @@
 {
-  "uid" : "7cddc7b4803f3dfa",
+  "uid" : "5a1218558a318b4d",
   "name" : "searchForExactTitle()",
   "fullName" : "qa.search.SearchTests.searchForExactTitle",
   "historyId" : "cbc802f4f210343e7ed1d6bba178aeb7",
   "time" : {
-    "start" : 1634859399748,
-    "stop" : 1634859400334,
-    "duration" : 586
+    "start" : 1635032174935,
+    "stop" : 1635032175574,
+    "duration" : 639
   },
   "description" : "",
   "status" : "passed",
@@ -18,25 +18,25 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "5c509b9c836fd353",
+      "uid" : "3b440e535b122a90",
       "name" : "screenshot.png",
-      "source" : "5c509b9c836fd353.png",
+      "source" : "3b440e535b122a90.png",
       "type" : "image/png",
       "size" : 88352
     } ],
     "parameters" : [ ],
-    "hasContent" : true,
     "stepsCount" : 0,
-    "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az71-135"
+    "value" : "fv-az30-258"
   }, {
     "name" : "thread",
-    "value" : "1572@fv-az71-135.main(1)"
+    "value" : "5348@fv-az30-258.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -69,6 +69,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7cddc7b4803f3dfa.json",
+  "source" : "5a1218558a318b4d.json",
   "parameterValues" : [ ]
 }
