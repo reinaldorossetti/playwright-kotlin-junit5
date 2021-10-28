@@ -1,12 +1,12 @@
 {
-  "uid" : "3d1542966dd730f8",
+  "uid" : "c82944707d52a013",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1635291423450,
-    "stop" : 1635291424331,
-    "duration" : 881
+    "start" : 1635464216877,
+    "stop" : 1635464217725,
+    "duration" : 848
   },
   "description" : "",
   "status" : "passed",
@@ -19,69 +19,69 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1635291423452,
-        "stop" : 1635291423453,
+        "start" : 1635464216879,
+        "stop" : 1635464216880,
         "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1635291423453,
-        "stop" : 1635291423453,
+        "start" : 1635464216880,
+        "stop" : 1635464216880,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 0,
+      "hasContent" : false
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1635291423453,
-        "stop" : 1635291423453,
+        "start" : 1635464216880,
+        "stop" : 1635464216880,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
+      "shouldDisplayMessage" : false,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "stepsCount" : 0,
+      "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "866e904133b1021a",
+      "uid" : "503de43df3feea8b",
       "name" : "screenshot.png",
-      "source" : "866e904133b1021a.png",
+      "source" : "503de43df3feea8b.png",
       "type" : "image/png",
       "size" : 276948
     } ],
     "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 3,
+    "shouldDisplayMessage" : false,
     "attachmentsCount" : 1,
-    "shouldDisplayMessage" : false
+    "stepsCount" : 3,
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az71-135"
+    "value" : "fv-az30-143"
   }, {
     "name" : "thread",
-    "value" : "4316@fv-az71-135.main(1)"
+    "value" : "6876@fv-az30-143.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "3d1542966dd730f8.json",
+  "source" : "c82944707d52a013.json",
   "parameterValues" : [ ]
 }
