@@ -1,12 +1,12 @@
 {
-  "uid" : "9e1e95356ba97215",
+  "uid" : "98b2b164694282a7",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1636414624218,
-    "stop" : 1636414625000,
-    "duration" : 782
+    "start" : 1636587467306,
+    "stop" : 1636587468111,
+    "duration" : 805
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1636414624221,
-        "stop" : 1636414624222,
+        "start" : 1636587467308,
+        "stop" : 1636587467309,
         "duration" : 1
       },
       "status" : "passed",
@@ -34,8 +34,8 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1636414624222,
-        "stop" : 1636414624222,
+        "start" : 1636587467309,
+        "stop" : 1636587467309,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1636414624222,
-        "stop" : 1636414624222,
+        "start" : 1636587467309,
+        "stop" : 1636587467309,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "attachmentsCount" : 0
     } ],
     "attachments" : [ {
-      "uid" : "18ad1428e57ff0ca",
+      "uid" : "779ff6306855e92a",
       "name" : "screenshot.png",
-      "source" : "18ad1428e57ff0ca.png",
+      "source" : "779ff6306855e92a.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -81,7 +81,7 @@
     "value" : "fv-az71-598"
   }, {
     "name" : "thread",
-    "value" : "5008@fv-az71-598.main(1)"
+    "value" : "5412@fv-az71-598.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9e1e95356ba97215.json",
+  "source" : "98b2b164694282a7.json",
   "parameterValues" : [ ]
 }
