@@ -1,12 +1,12 @@
 {
-  "uid" : "7d21898ab50f6b25",
+  "uid" : "7ce01e845ab1b995",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1636415041606,
-    "stop" : 1636415042431,
-    "duration" : 825
+    "start" : 1636587475300,
+    "stop" : 1636587476096,
+    "duration" : 796
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1636415041609,
-        "stop" : 1636415041610,
+        "start" : 1636587475302,
+        "stop" : 1636587475303,
         "duration" : 1
       },
       "status" : "passed",
@@ -34,8 +34,8 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1636415041611,
-        "stop" : 1636415041611,
+        "start" : 1636587475304,
+        "stop" : 1636587475304,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1636415041611,
-        "stop" : 1636415041611,
+        "start" : 1636587475304,
+        "stop" : 1636587475304,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "stepsCount" : 0
     } ],
     "attachments" : [ {
-      "uid" : "1f5cf9d05f07175d",
+      "uid" : "f63147dc461fb5c9",
       "name" : "screenshot.png",
-      "source" : "1f5cf9d05f07175d.png",
+      "source" : "f63147dc461fb5c9.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -78,10 +78,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az30-527"
+    "value" : "fv-az71-598"
   }, {
     "name" : "thread",
-    "value" : "3640@fv-az30-527.main(1)"
+    "value" : "1028@fv-az71-598.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7d21898ab50f6b25.json",
+  "source" : "7ce01e845ab1b995.json",
   "parameterValues" : [ ]
 }
