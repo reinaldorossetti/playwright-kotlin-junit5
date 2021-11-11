@@ -1,12 +1,12 @@
 {
-  "uid" : "d87ce55967e356b5",
+  "uid" : "19d8b5a12aa58396",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1636587422742,
-    "stop" : 1636587423560,
-    "duration" : 818
+    "start" : 1636673841033,
+    "stop" : 1636673841813,
+    "duration" : 780
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1636587422744,
-        "stop" : 1636587422745,
+        "start" : 1636673841034,
+        "stop" : 1636673841035,
         "duration" : 1
       },
       "status" : "passed",
@@ -34,9 +34,9 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1636587422745,
-        "stop" : 1636587422746,
-        "duration" : 1
+        "start" : 1636673841035,
+        "stop" : 1636673841035,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1636587422746,
-        "stop" : 1636587422746,
+        "start" : 1636673841035,
+        "stop" : 1636673841035,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "33bca9b6e6ac6979",
+      "uid" : "c110c6ae20df47fa",
       "name" : "screenshot.png",
-      "source" : "33bca9b6e6ac6979.png",
+      "source" : "c110c6ae20df47fa.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -78,10 +78,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az30-527"
+    "value" : "fv-az71-244"
   }, {
     "name" : "thread",
-    "value" : "4500@fv-az30-527.main(1)"
+    "value" : "5388@fv-az71-244.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d87ce55967e356b5.json",
+  "source" : "19d8b5a12aa58396.json",
   "parameterValues" : [ ]
 }
