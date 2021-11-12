@@ -1,12 +1,12 @@
 {
-  "uid" : "f1f1ee0c06a2b42b",
+  "uid" : "3cd1098dc8b6d3e3",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1636673847053,
-    "stop" : 1636673847845,
-    "duration" : 792
+    "start" : 1636760105603,
+    "stop" : 1636760106376,
+    "duration" : 773
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1636673847056,
-        "stop" : 1636673847058,
-        "duration" : 2
+        "start" : 1636760105606,
+        "stop" : 1636760105607,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,8 +34,8 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1636673847058,
-        "stop" : 1636673847058,
+        "start" : 1636760105607,
+        "stop" : 1636760105607,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1636673847058,
-        "stop" : 1636673847058,
+        "start" : 1636760105607,
+        "stop" : 1636760105607,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "752d0b453add34c9",
+      "uid" : "5763884093ea4dbf",
       "name" : "screenshot.png",
-      "source" : "752d0b453add34c9.png",
+      "source" : "5763884093ea4dbf.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -81,7 +81,7 @@
     "value" : "fv-az71-244"
   }, {
     "name" : "thread",
-    "value" : "5392@fv-az71-244.main(1)"
+    "value" : "5156@fv-az71-244.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f1f1ee0c06a2b42b.json",
+  "source" : "3cd1098dc8b6d3e3.json",
   "parameterValues" : [ ]
 }
