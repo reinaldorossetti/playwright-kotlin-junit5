@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Thu Nov 11 23:37:21 UTC 2021","Thu Nov 11 23:37:21 UTC 2021","780","","qa.search.SearchTests","","qa.search.SearchTests","searchForPartialTitle","searchForPartialTitle()",""
-"passed","Thu Nov 11 23:37:20 UTC 2021","Thu Nov 11 23:37:20 UTC 2021","557","","qa.search.SearchTests","","qa.search.SearchTests","searchForExactTitle","searchForExactTitle()",""
+"passed","Sat Nov 13 23:36:17 UTC 2021","Sat Nov 13 23:36:17 UTC 2021","548","","qa.search.SearchTests","","qa.search.SearchTests","searchForExactTitle","searchForExactTitle()",""
+"passed","Sat Nov 13 23:36:17 UTC 2021","Sat Nov 13 23:36:18 UTC 2021","824","","qa.search.SearchTests","","qa.search.SearchTests","searchForPartialTitle","searchForPartialTitle()",""
