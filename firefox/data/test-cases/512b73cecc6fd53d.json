@@ -1,12 +1,12 @@
 {
-  "uid" : "43741dcda0659a06",
+  "uid" : "512b73cecc6fd53d",
   "name" : "searchForExactTitle()",
   "fullName" : "qa.search.SearchTests.searchForExactTitle",
   "historyId" : "cbc802f4f210343e7ed1d6bba178aeb7",
   "time" : {
-    "start" : 1636846577189,
-    "stop" : 1636846577737,
-    "duration" : 548
+    "start" : 1637105890384,
+    "stop" : 1637105891039,
+    "duration" : 655
   },
   "description" : "",
   "status" : "passed",
@@ -18,9 +18,9 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "cb3f66f90d1226bb",
+      "uid" : "1a8c537580b7e53a",
       "name" : "screenshot.png",
-      "source" : "cb3f66f90d1226bb.png",
+      "source" : "1a8c537580b7e53a.png",
       "type" : "image/png",
       "size" : 88352
     } ],
@@ -33,10 +33,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az71-244"
+    "value" : "fv-az71-738"
   }, {
     "name" : "thread",
-    "value" : "4516@fv-az71-244.main(1)"
+    "value" : "1464@fv-az71-738.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -69,6 +69,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "43741dcda0659a06.json",
+  "source" : "512b73cecc6fd53d.json",
   "parameterValues" : [ ]
 }
