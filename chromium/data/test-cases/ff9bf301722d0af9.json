@@ -1,12 +1,12 @@
 {
-  "uid" : "f538dccc9ca95dfe",
+  "uid" : "ff9bf301722d0af9",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1637105829563,
-    "stop" : 1637105830425,
-    "duration" : 862
+    "start" : 1637192170888,
+    "stop" : 1637192171685,
+    "duration" : 797
   },
   "description" : "",
   "status" : "passed",
@@ -19,8 +19,8 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1637105829565,
-        "stop" : 1637105829566,
+        "start" : 1637192170889,
+        "stop" : 1637192170890,
         "duration" : 1
       },
       "status" : "passed",
@@ -34,8 +34,8 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1637105829566,
-        "stop" : 1637105829566,
+        "start" : 1637192170891,
+        "stop" : 1637192170891,
         "duration" : 0
       },
       "status" : "passed",
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1637105829567,
-        "stop" : 1637105829567,
+        "start" : 1637192170891,
+        "stop" : 1637192170891,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "shouldDisplayMessage" : false
     } ],
     "attachments" : [ {
-      "uid" : "8ccff26761eb698f",
+      "uid" : "9dd1c4da78311fad",
       "name" : "screenshot.png",
-      "source" : "8ccff26761eb698f.png",
+      "source" : "9dd1c4da78311fad.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -81,7 +81,7 @@
     "value" : "fv-az30-778"
   }, {
     "name" : "thread",
-    "value" : "1424@fv-az30-778.main(1)"
+    "value" : "6872@fv-az30-778.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f538dccc9ca95dfe.json",
+  "source" : "ff9bf301722d0af9.json",
   "parameterValues" : [ ]
 }
