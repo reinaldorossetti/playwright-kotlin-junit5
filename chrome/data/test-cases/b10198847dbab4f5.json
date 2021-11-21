@@ -1,12 +1,12 @@
 {
-  "uid" : "ced5486e1d608350",
+  "uid" : "b10198847dbab4f5",
   "name" : "searchForPartialTitle()",
   "fullName" : "qa.search.SearchTests.searchForPartialTitle",
   "historyId" : "cff38161b5dbb7f2f4307860a34353e1",
   "time" : {
-    "start" : 1637451366125,
-    "stop" : 1637451366929,
-    "duration" : 804
+    "start" : 1637537803471,
+    "stop" : 1637537804278,
+    "duration" : 807
   },
   "description" : "",
   "status" : "passed",
@@ -19,9 +19,9 @@
     "steps" : [ {
       "name" : "Dado que estou no site",
       "time" : {
-        "start" : 1637451366128,
-        "stop" : 1637451366128,
-        "duration" : 0
+        "start" : 1637537803473,
+        "stop" : 1637537803475,
+        "duration" : 2
       },
       "status" : "passed",
       "steps" : [ ],
@@ -34,9 +34,9 @@
     }, {
       "name" : "Quando fizer a busca do livro",
       "time" : {
-        "start" : 1637451366131,
-        "stop" : 1637451366131,
-        "duration" : 0
+        "start" : 1637537803475,
+        "stop" : 1637537803476,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -49,8 +49,8 @@
     }, {
       "name" : "Então valida o retorno da busca",
       "time" : {
-        "start" : 1637451366131,
-        "stop" : 1637451366131,
+        "start" : 1637537803476,
+        "stop" : 1637537803476,
         "duration" : 0
       },
       "status" : "passed",
@@ -63,9 +63,9 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "f788aaf2d0681ac8",
+      "uid" : "fb353d7c0c26ea55",
       "name" : "screenshot.png",
-      "source" : "f788aaf2d0681ac8.png",
+      "source" : "fb353d7c0c26ea55.png",
       "type" : "image/png",
       "size" : 276948
     } ],
@@ -78,10 +78,10 @@
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "host",
-    "value" : "fv-az30-778"
+    "value" : "fv-az71-738"
   }, {
     "name" : "thread",
-    "value" : "5536@fv-az30-778.main(1)"
+    "value" : "3868@fv-az71-738.main(1)"
   }, {
     "name" : "framework",
     "value" : "junit-platform"
@@ -114,6 +114,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ced5486e1d608350.json",
+  "source" : "b10198847dbab4f5.json",
   "parameterValues" : [ ]
 }
