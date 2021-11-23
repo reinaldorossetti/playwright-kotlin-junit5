@@ -3,26 +3,26 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "searchForExactTitle()",
-    "uid" : "4b65e60341dfc0b2",
+    "uid" : "3b947f40cf943050",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1637537823376,
-      "stop" : 1637537823982,
-      "duration" : 606
+      "start" : 1637710744431,
+      "stop" : 1637710745088,
+      "duration" : 657
     },
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "searchForPartialTitle()",
-    "uid" : "1d11a8d5f9ec2f02",
+    "uid" : "54684bc4e78253b4",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1637537824137,
-      "stop" : 1637537824973,
-      "duration" : 836
+      "start" : 1637710745247,
+      "stop" : 1637710746156,
+      "duration" : 909
     },
     "flaky" : false,
     "newFailed" : false,
