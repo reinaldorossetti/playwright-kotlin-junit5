@@ -19,15 +19,17 @@ repositories {
 
 dependencies {
     implementation("org.hamcrest:hamcrest:2.2")
+    implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.5.20-M1")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5:1.5.20-M1")
     testImplementation("io.rest-assured:rest-assured:4.4.0")
     testImplementation("io.rest-assured:kotlin-extensions:4.4.0")
     testImplementation("io.rest-assured:json-schema-validator:4.4.0")
     testImplementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.8.+")
     testImplementation("com.github.javafaker:javafaker:1.0.2")
-    implementation("com.microsoft.playwright:playwright:1.12.1")
+    implementation("com.microsoft.playwright:playwright:1.31.0")
     testImplementation("io.qameta.allure:allure-junit5:2.14.0")
     implementation("io.qameta.allure:allure-okhttp3:2.10.0")
+    implementation(kotlin("script-runtime"))
 }
 
 configure<JavaPluginConvention> {

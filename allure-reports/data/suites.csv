@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Mar 27 18:47:14 BRT 2023","Mon Mar 27 18:47:15 BRT 2023","1288","","Logout","","","","successfully",""
+"passed","Mon Mar 27 18:46:39 BRT 2023","Mon Mar 27 18:46:41 BRT 2023","1361","","Create issue","","","","successfully",""
+"passed","Mon Mar 27 18:47:03 BRT 2023","Mon Mar 27 18:47:07 BRT 2023","3651","","Create Project","","","","successfully",""
+"passed","Mon Mar 27 18:46:51 BRT 2023","Mon Mar 27 18:46:59 BRT 2023","8217","","Create Issue","","","","successfully",""
+"passed","Mon Mar 27 18:47:10 BRT 2023","Mon Mar 27 18:47:11 BRT 2023","1748","","Login","","","","successfully",""
+"passed","Mon Mar 27 18:47:20 BRT 2023","Mon Mar 27 18:47:25 BRT 2023","5305","","Set label on issue","","","","successfully",""

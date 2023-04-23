@@ -1,0 +1,1002 @@
+{
+  "uid" : "971a1841ec5b2742",
+  "name" : "successfully",
+  "fullName" : "successfully",
+  "historyId" : "4b170c5d1aaa9698a0db791e7f7bf31f",
+  "time" : {
+    "start" : 1679953640182,
+    "stop" : 1679953645487,
+    "duration" : 5305
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1679953640184,
+        "stop" : 1679953644878,
+        "duration" : 4694
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "api_deleteProjects",
+        "time" : {
+          "start" : 1679953640229,
+          "stop" : 1679953640577,
+          "duration" : 348
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "api_getAllProjects",
+          "time" : {
+            "start" : 1679953640230,
+            "stop" : 1679953640397,
+            "duration" : 167
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "GET 200 /api/v4/projects/",
+            "time" : {
+              "start" : 1679953640231,
+              "stop" : 1679953640396,
+              "duration" : 165
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "DELETE 202 /api/v4/projects/102",
+          "time" : {
+            "start" : 1679953640398,
+            "stop" : 1679953640463,
+            "duration" : 65
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "DELETE 202 /api/v4/projects/101",
+          "time" : {
+            "start" : 1679953640463,
+            "stop" : 1679953640502,
+            "duration" : 39
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "DELETE 202 /api/v4/projects/100",
+          "time" : {
+            "start" : 1679953640502,
+            "stop" : 1679953640537,
+            "duration" : 35
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "DELETE 202 /api/v4/projects/99",
+          "time" : {
+            "start" : 1679953640537,
+            "stop" : 1679953640577,
+            "duration" : 40
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 6,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "login",
+        "time" : {
+          "start" : 1679953640577,
+          "stop" : 1679953645487,
+          "duration" : 4910
+        },
+        "status" : "failed",
+        "steps" : [ {
+          "name" : "session root",
+          "time" : {
+            "start" : 1679953640578,
+            "stop" : 1679953645487,
+            "duration" : 4909
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "sessions_manager",
+            "time" : {
+              "start" : 1679953640620,
+              "stop" : 1679953640620,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "session",
+            "time" : {
+              "start" : 1679953640620,
+              "stop" : 1679953640620,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "Clear page",
+            "time" : {
+              "start" : 1679953640620,
+              "stop" : 1679953640620,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "visit / -> 302: http://192.168.18.4/users/sign_in",
+            "time" : {
+              "start" : 1679953640623,
+              "stop" : 1679953641054,
+              "duration" : 431
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "location pathname",
+            "time" : {
+              "start" : 1679953641054,
+              "stop" : 1679953645487,
+              "duration" : 4433
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "visit /users/sign_in",
+            "time" : {
+              "start" : 1679953642080,
+              "stop" : 1679953642222,
+              "duration" : 142
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "get [data-qa-selector='login_field']",
+            "time" : {
+              "start" : 1679953642222,
+              "stop" : 1679953642230,
+              "duration" : 8
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "type root",
+            "time" : {
+              "start" : 1679953642230,
+              "stop" : 1679953642432,
+              "duration" : 202
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "get [data-qa-selector='password_field']",
+            "time" : {
+              "start" : 1679953642432,
+              "stop" : 1679953642436,
+              "duration" : 4
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "screenshot sign_in_data-da43784a-1f5c-44fe-bac8-61252f479583",
+            "time" : {
+              "start" : 1679953642692,
+              "stop" : 1679953643147,
+              "duration" : 455
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "get [data-qa-selector='sign_in_button']",
+            "time" : {
+              "start" : 1679953643147,
+              "stop" : 1679953643152,
+              "duration" : 5
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "click",
+            "time" : {
+              "start" : 1679953643152,
+              "stop" : 1679953643242,
+              "duration" : 90
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "form sub --submitting form--",
+            "time" : {
+              "start" : 1679953643242,
+              "stop" : 1679953643242,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "page load --waiting for new page to load--",
+            "time" : {
+              "start" : 1679953643242,
+              "stop" : 1679953643242,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "new url http://192.168.18.4/",
+            "time" : {
+              "start" : 1679953643439,
+              "stop" : 1679953643439,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "sessions_manager",
+            "time" : {
+              "start" : 1679953643439,
+              "stop" : 1679953643439,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "session",
+            "time" : {
+              "start" : 1679953643439,
+              "stop" : 1679953643439,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "Clear page",
+            "time" : {
+              "start" : 1679953643439,
+              "stop" : 1679953643439,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "visit /",
+            "time" : {
+              "start" : 1679953643441,
+              "stop" : 1679953643593,
+              "duration" : 152
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "location pathname",
+            "time" : {
+              "start" : 1679953643593,
+              "stop" : 1679953643596,
+              "duration" : 3
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "assert expected **/** to not equal **/users/sign_in**",
+            "time" : {
+              "start" : 1679953643596,
+              "stop" : 1679953643596,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "actual",
+              "value" : "/"
+            }, {
+              "name" : "expected",
+              "value" : "/users/sign_in"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "session",
+            "time" : {
+              "start" : 1679953643597,
+              "stop" : 1679953643597,
+              "duration" : 0
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "assert expected **/users/sign_in** to not equal **/users/sign_in**",
+            "time" : {
+              "start" : 1679953645487,
+              "stop" : 1679953645487,
+              "duration" : 0
+            },
+            "status" : "failed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "actual",
+              "value" : "/users/sign_in"
+            }, {
+              "name" : "expected",
+              "value" : "/users/sign_in"
+            } ],
+            "stepsCount" : 0,
+            "hasContent" : true,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          }, {
+            "name" : "session",
+            "time" : {
+              "start" : 1679953645487,
+              "stop" : 1679953645487,
+              "duration" : 0
+            },
+            "status" : "failed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 24,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 25,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "api_createIssue (\"{ title: 'issue-4a920d49-0897-48a2-9b15-496e6fbcd0'... 2 more characters, description: 'Fitness Livermorium Health', project: { name: 'project-e1ac0eb3-4f98-4ea9-8883-a00f6b30'... 4 more characters, description: 'hence abandoned Ball Towels Folk' } }\")",
+        "time" : {
+          "start" : 1679953643607,
+          "stop" : 1679953644378,
+          "duration" : 771
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "api_createProject (\"{ name: 'project-e1ac0eb3-4f98-4ea9-8883-a00f6b30'... 4 more characters, description: 'hence abandoned Ball Towels Folk' }\")",
+          "time" : {
+            "start" : 1679953643607,
+            "stop" : 1679953644260,
+            "duration" : 653
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "POST 201 /api/v4/projects/",
+            "time" : {
+              "start" : 1679953643607,
+              "stop" : 1679953644260,
+              "duration" : 653
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "hasContent" : false,
+            "shouldDisplayMessage" : false,
+            "attachmentsCount" : 0
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 1,
+          "hasContent" : true,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "POST 201 /api/v4/projects/103/issues",
+          "time" : {
+            "start" : 1679953644261,
+            "stop" : 1679953644378,
+            "duration" : 117
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 3,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "api_createLabel (\"103\"; \"{ name: 'label-Response', color: '#ffaabb' }\")",
+        "time" : {
+          "start" : 1679953644379,
+          "stop" : 1679953644414,
+          "duration" : 35
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "POST 201 /api/v4/projects/103/labels",
+          "time" : {
+            "start" : 1679953644379,
+            "stop" : 1679953644413,
+            "duration" : 34
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "visit root/project-e1ac0eb3-4f98-4ea9-8883-a00f6b304a1b/issues/1",
+        "time" : {
+          "start" : 1679953644414,
+          "stop" : 1679953644877,
+          "duration" : 463
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "root/project-e1ac0eb3-4f98-4ea9-8883-a00f6b304a1b/issues/1 request",
+        "time" : {
+          "start" : 1679953644877,
+          "stop" : 1679953644877,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "root/project-e1ac0eb3-4f98-4ea9-8883-a00f6b304a1b/issues/1 request",
+        "time" : {
+          "start" : 1679953644877,
+          "stop" : 1679953644877,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "root/project-e1ac0eb3-4f98-4ea9-8883-a00f6b304a1b/issues/1 request",
+        "time" : {
+          "start" : 1679953644877,
+          "stop" : 1679953644877,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "root/project-e1ac0eb3-4f98-4ea9-8883-a00f6b304a1b/issues/1 request",
+        "time" : {
+          "start" : 1679953644877,
+          "stop" : 1679953644877,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 44,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "gui_setLabelOnIssue (\"{ name: 'label-Response', color: '#ffaabb' }\")",
+      "time" : {
+        "start" : 1679953644880,
+        "stop" : 1679953645385,
+        "duration" : 505
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get .qa-edit-link-labels",
+        "time" : {
+          "start" : 1679953644880,
+          "stop" : 1679953644889,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1679953644889,
+          "stop" : 1679953645030,
+          "duration" : 141
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1679953645029,
+          "stop" : 1679953645029,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1679953645029,
+          "stop" : 1679953645029,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1679953645029,
+          "stop" : 1679953645029,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1679953645030,
+          "stop" : 1679953645030,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "contains label-Response",
+        "time" : {
+          "start" : 1679953645030,
+          "stop" : 1679953645113,
+          "duration" : 83
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1679953645113,
+          "stop" : 1679953645261,
+          "duration" : 148
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get body",
+        "time" : {
+          "start" : 1679953645261,
+          "stop" : 1679953645262,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1679953645262,
+          "stop" : 1679953645385,
+          "duration" : 123
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "request",
+        "time" : {
+          "start" : 1679953645384,
+          "stop" : 1679953645384,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 11,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get .qa-labels-block",
+      "time" : {
+        "start" : 1679953645385,
+        "stop" : 1679953645476,
+        "duration" : 91
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<div.dont-hide.hide-collapsed.issuable-show-labels.qa-labels-block.value>** to contain **label-Response**",
+      "time" : {
+        "start" : 1679953645476,
+        "stop" : 1679953645476,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get .qa-labels-block span",
+      "time" : {
+        "start" : 1679953645476,
+        "stop" : 1679953645486,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<span.badge.label.has-tooltip.color-label>** to have attribute **style** with the value **background-color: #ffaabb; color: #333333;**",
+      "time" : {
+        "start" : 1679953645486,
+        "stop" : 1679953645486,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "background-color: #ffaabb; color: #333333;"
+      }, {
+        "name" : "expected",
+        "value" : "background-color: #ffaabb; color: #333333;"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Clear page",
+      "time" : {
+        "start" : 1679953645487,
+        "stop" : 1679953645487,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "897836cdc21d7769",
+      "name" : "sign_in_data-da43784a-1f5c-44fe-bac8-61252f479583",
+      "source" : "897836cdc21d7769.png",
+      "type" : "image/png",
+      "size" : 49531
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 62,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress\\e2e\\gui\\setLabelOnIssue.cy.js"
+  }, {
+    "name" : "suite",
+    "value" : "Set label on issue"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "971a1841ec5b2742.json",
+  "parameterValues" : [ ]
+}

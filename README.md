@@ -27,7 +27,17 @@ npm install -g allure-commandline
 >> playwright inspect mode:  
 npx playwright codegen https://automationbookstore.dev
 
+Now, we can start Postgres with just one simple command:
+````shell
+docker-compose up
+````
+or run Postgres in the background with this command, adding -d Detached mode
 
+$ docker-compose up -d
+And stop the Postgres service running
+
+$ docker-compose down
+In this case, we mapped our local port 5438 to the port 5432 (Postgres default port) inside the container., also we will persist the data in our machine, preventing data loss when deleting the containers, for this, we add the volume using the folder postgres-data as the place where Postgres data are stored.
 References:  
 https://github.com/microsoft/playwright-java  
 https://playwright.dev  

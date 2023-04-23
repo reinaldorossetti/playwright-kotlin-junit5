@@ -1,0 +1,249 @@
+{
+  "uid" : "f6d2bf1739d76b0b",
+  "name" : "successfully",
+  "fullName" : "successfully",
+  "historyId" : "1c2ef6702a4d25eccba7ba58ad8906c2",
+  "time" : {
+    "start" : 1679953630219,
+    "stop" : 1679953631967,
+    "duration" : 1748
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login (\"root\"; \"root@2023#\"; \"{ cacheSession: false }\")",
+      "time" : {
+        "start" : 1679953630254,
+        "stop" : 1679953631634,
+        "duration" : 1380
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit /users/sign_in",
+        "time" : {
+          "start" : 1679953630257,
+          "stop" : 1679953630679,
+          "duration" : 422
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get [data-qa-selector='login_field']",
+        "time" : {
+          "start" : 1679953630679,
+          "stop" : 1679953630694,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "type root",
+        "time" : {
+          "start" : 1679953630694,
+          "stop" : 1679953630815,
+          "duration" : 121
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get [data-qa-selector='password_field']",
+        "time" : {
+          "start" : 1679953630815,
+          "stop" : 1679953630820,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "screenshot sign_in_data-5b568960-6bf5-4812-97de-8521e0a2b49b",
+        "time" : {
+          "start" : 1679953631081,
+          "stop" : 1679953631539,
+          "duration" : 458
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "get [data-qa-selector='sign_in_button']",
+        "time" : {
+          "start" : 1679953631539,
+          "stop" : 1679953631545,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1679953631545,
+          "stop" : 1679953631634,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "form sub --submitting form--",
+        "time" : {
+          "start" : 1679953631634,
+          "stop" : 1679953631634,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      }, {
+        "name" : "page load --waiting for new page to load--",
+        "time" : {
+          "start" : 1679953631634,
+          "stop" : 1679953631634,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "new url http://192.168.18.4/",
+      "time" : {
+        "start" : 1679953631634,
+        "stop" : 1679953631966,
+        "duration" : 332
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<img.header-user-avatar.qa-user-avatar.lazy>** to be **visible**",
+      "time" : {
+        "start" : 1679953631966,
+        "stop" : 1679953631966,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get .qa-user-avatar",
+      "time" : {
+        "start" : 1679953631966,
+        "stop" : 1679953631966,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "cc3d41473548e61c",
+      "name" : "sign_in_data-5b568960-6bf5-4812-97de-8521e0a2b49b",
+      "source" : "cc3d41473548e61c.png",
+      "type" : "image/png",
+      "size" : 49531
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 13,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress\\e2e\\gui\\login.cy.js"
+  }, {
+    "name" : "suite",
+    "value" : "Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f6d2bf1739d76b0b.json",
+  "parameterValues" : [ ]
+}
