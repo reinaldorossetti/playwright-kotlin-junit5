@@ -30,6 +30,7 @@ dependencies {
     testImplementation("io.qameta.allure:allure-junit5:2.14.0")
     implementation("io.qameta.allure:allure-okhttp3:2.10.0")
     implementation(kotlin("script-runtime"))
+    implementation(kotlin("stdlib-jdk8"))
 }
 
 configure<JavaPluginConvention> {
@@ -57,3 +58,11 @@ tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions.jvmTarget = "11"
 }
 
+val compileKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions {
+    jvmTarget = "1.8"
+}
+val compileTestKotlin: KotlinCompile by tasks
+compileTestKotlin.kotlinOptions {
+    jvmTarget = "1.8"
+}

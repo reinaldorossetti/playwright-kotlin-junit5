@@ -10,10 +10,12 @@ class SearchFeature(private val page: Page): GlobalFunctions(page) {
 
     private val searchData = SearchData()
 
-    fun search(query: String?) {
+    fun search(query: String) {
         clearSearchBar()
-        page.fill(searchData.searchBarElem, query)
-        page.waitForSelector(searchData.hiddenBooksElem, stateATTACHED)
+        page.apply {
+            fill(searchData.searchBarElem, query)
+            waitForSelector(searchData.hiddenBooksElem, stateATTACHED)
+        }
     }
 
     fun clearSearchBar() {
