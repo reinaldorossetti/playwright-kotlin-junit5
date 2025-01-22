@@ -15,18 +15,21 @@ import java.io.FileInputStream
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import kotlin.test.expect
 
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-open class BaseTests(open var url: String="https://www.saucedemo.com") {
+open class BaseTests(open var url: String="https://www.saucedemo.com", open var setHeadless:Boolean=false) {
     private lateinit var browser: Browser
     open lateinit var pw: Page
 
     fun click(type: String) { pw.locator(type).click() }
-    fun validateText(text:String,locator:String="#shopping_cart_container") {
+    fun validateText(text:String,locator:String) {
         assertThat(pw.locator(locator)).hasText(text)}
     fun text(text: String, tag:String="button"): Locator {return pw.locator("${tag}:has-text(\"${text}\")")}
     fun fill(locator:String, value: String) {pw.locator(locator).fill(value)}
+
+    fun getByDataTest(locator:String): Locator? {return pw.locator("[data-test=\"${locator}\"]")}
 
     @BeforeAll
     fun setUp() {
@@ -35,7 +38,7 @@ open class BaseTests(open var url: String="https://www.saucedemo.com") {
         browser = Playwright
             .create()
             .chromium()
-            .launch(LaunchOptions().setHeadless(true))
+            .launch(LaunchOptions().setHeadless(this.setHeadless))
 
         //A single browser tab
         pw = browser.newPage()

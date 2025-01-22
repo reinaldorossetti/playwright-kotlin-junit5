@@ -7,7 +7,8 @@ import org.junit.jupiter.api.*
 import qa.model.CheckoutFeatureData
 import java.util.regex.Pattern.compile
 
-class CheckoutSpec(val ccfd: CheckoutFeatureData = CheckoutFeatureData()): BaseTests() {
+class CheckoutSpec(): BaseTests() {
+    val ccfd: CheckoutFeatureData = CheckoutFeatureData()
     @BeforeEach
     fun beforeTest() {
         login("standard_user", "secret_sauce")
@@ -15,29 +16,33 @@ class CheckoutSpec(val ccfd: CheckoutFeatureData = CheckoutFeatureData()): BaseT
 
     @Test
     fun successfull_checkout() {
-        step(ccfd.addRemoveItensStep)
+        step(ccfd.Steps_Add_Remove_ItensFromCart)
         click(ccfd.btnAddBackpack)
-        validateText("1")
+        validateText("1", ccfd.locator_ShoppingCart)
         click(ccfd.btnAddBikeLight)
-        validateText("2")
+        validateText("2", ccfd.locator_ShoppingCart)
         text(ccfd.txtBtnRemove).first().click()
-        validateText("1")
+        validateText("1", ccfd.locator_ShoppingCart)
         click(ccfd.btnAddBackpack)
-        step(ccfd.goToShoppingCart)
+
+        step(ccfd.Steps_Go_To_ShoppingCart)
         click(ccfd.btnShoppingCart)
         assertThat(text(ccfd.txtBtnRemove)).hasCount(2)
+
+        step(ccfd.Steps_Fill_Customer_Info)
         text(ccfd.txtBtnCheckout).first().click()
-        step(ccfd.fillCustomerStep)
         fill(ccfd.inputFirstName,ccfd.FirstName)
         fill(ccfd.inputLastName,ccfd.LastName)
         fill(ccfd.inputPostalCode,ccfd.PostalCode)
         text(ccfd.txtBtnContinue, ccfd.tagInput).first().click()
-        step(ccfd.checkOrderInfoStep)
+
+        step(ccfd.Steps_Check_Order_Info_Checkout)
         validateText(ccfd.itemTotal,ccfd.txtSubTotal)
         validateText(ccfd.itemTax,ccfd.txtTax)
-        validateText(ccfd.itemTotalSomaTax,ccfd.txtTotalSomaTax)
+        assertThat(getByDataTest(ccfd.txtTotalSomaTax)).hasText(ccfd.itemTotalSomaTax)
         text(ccfd.txtBtnFinish).first().click()
-        step(ccfd.checkoutOKStep)
+
+        step(ccfd.Steps_Check_Checkout_Successfull)
         assertThat(pw.getByText(ccfd.mensageOrder)).isVisible()
         text(ccfd.txtBtnBackHome).first().click()
         assertThat(pw).hasURL(compile(ccfd.urlInventory))
